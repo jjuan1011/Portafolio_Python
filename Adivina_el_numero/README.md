@@ -1,2 +1,0 @@
-
-En este proyecto haremos que el usuario compita contra la maquina en una disputa por adivinar el numero que arroje la computadora en un intervalo de numeros dados, y le vamos a decir si dicho numero es mayor, menor o igual.
