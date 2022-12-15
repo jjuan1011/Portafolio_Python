@@ -1,6 +1,8 @@
 
 
 '''
+BET PLAY
+
 Crear un programa de apuestas futboleras en la que Programa agarre dos equipos de una lista y el usuario lance su apuesta hacia dichos equipos y que se de un resultado de forma aleatoria tambien, despues segun el resultado mirar si el usuario ganó o perdió y cuando ganó, esto las veces que sea necesario hasta que el usuario decida salir del programa
 '''
 import random
@@ -41,24 +43,8 @@ class Bet_play():
                     print('Gana', (self.computer_election_1), 'Ganaste', (self.cant_bet * 10), 'Pesos :)')
                 else:
                      print('Gana', (self.computer_election_1), 'Perdiste hijo de re mil putas ;(')
-            
-
-
-            # elif self.usser_bet == self.computer_election_1 and self.score_election_1 > self.score_election_2 :
-            #     print('Gana', (self.computer_election_1), 'Ganaste', (self.cant_bet * 10), 'Pesos :)')
-            # elif self.usser_bet != self.computer_election_1 and self.score_election_1 > self.score_election_2 :
-            #     print('Gana', (self.computer_election_1), 'Perdiste hijo de re mil putas ;(')
-
-            # elif self.usser_bet == self.computer_election_2 and self.score_election_2 > self.score_election_1 :
-            #     print('Gana', (self.computer_election_2), 'Ganaste', (self.cant_bet * 10), 'Pesos :)')
-            # elif self.usser_bet != self.computer_election_2 and self.score_election_2 > self.score_election_2 :
-            #     print('Gana', (self.computer_election_2), 'Perdiste hijo de re mil putas ;(')
                 
-
-
-            self.request = int(input('Si desea hacer otra apuesta ingrese => 1 si desea salir ingrese => 2     ¿QUÉ DESEAS HACER? =>>> '))
-        
-
+            self.request = int(input('Si desea hacer otra apuesta ingrese => 1 si desea salir ingrese => 2     ¿QUÉ DESEAS HACER? =>>> '))       
 
 apuesta = Bet_play()
 apuesta.bet_now()
