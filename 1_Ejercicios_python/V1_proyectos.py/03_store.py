@@ -46,46 +46,46 @@ class Store():
                         if i in self.add_element_man:
                             self.man[i] #Valor de la iteración ej: precio de articulo
                         # self.buy_cest[self.add_element_man] = self.man[i] # Clave valor 
-                            
-                            
                     self.exit_or_continue_man = int(input('Para salir ingrese => 1, para seguir en la sección de hombres ingrese => 2  INGRESE SU OPCIÓN =>>> '))
                 
             elif self.usser_election == 'c':
-                while self.exit_or_continue_girl != 2:
+                while self.exit_or_continue_girl != 1:
                     print(self.girl)
                     self.add_element_girl = input('Ingrese el elemento que desea agregar al carrito => ').lower()
                     for i in self.girl:
                         if i in self.add_element_girl:
                             self.girl[i] #Valor de la iteración ej: precio de articulo
-                            self.buy_cest[self.add_element_girl] = self.girl[i] # Clave valor 
-                    self.exit_or_continue_girl = int(input('Para salir ingrese => 1, para seguir en la sección de hombres ingrese => 2 INGRESE SU OPCIÓN =>>> '))
-
-            elif self.usser_election == 'f':
-                print(self.buy_cest)
-                self.total_price = self.man[i] + self.girl[i]
-                print(f'El valor total de su carrito es de {self.total_price}')
+                            # self.buy_cest[self.add_element_girl] = self.girl[i] # Clave valor 
+                    self.exit_or_continue_girl = int(input('Para salir ingrese => 1, para seguir en la sección de mujere1s ingrese => 2 INGRESE SU OPCIÓN =>>> '))
 
             self.request = input('Para continuar comprando ingresa = si, para ir a pagar ingresa => no  INGRESA TU OPCIÓN =>>> ').lower()
         
+
+            # elif self.usser_election == 'f':
+            #     print(self.buy_cest)
+            #     self.total_price = self.man[i] + self.girl[i]
+            #     print(f'El valor total de su carrito es de {self.total_price}')
+
+        
     def pay(self):
         print('======================= Elija su método de pago =======================')
-        print(f'Valor a pagar {self.total_price} pesos')
-        self.usser_pay = int(input(' - Tarjeta de crédito = 01 \n - Tarjeta débito = 02 \n - Efectivo = 03  INGRESE EL CÓDIGO DE LA OPCIÓN QUE DESEA => ' ))
+        print('Valor a pagar 000000 pesos')
+        self.usser_pay = str(input(' - Tarjeta de crédito = 01 \n - Tarjeta débito = 02 \n - Efectivo = 03  \n INGRESE EL CÓDIGO DE LA OPCIÓN QUE DESEA => ' ))
         if self.usser_pay == '01':
-            print('- Ingrese el número de la tarjeta =>>> ')
-            print('- Ingrese CCV de la tarjeta =>>> ')
-            print('- Ingrese F/v =>>> ')
-            print('Ingrese el número de cuotas => ')
-            print('====== PAGO EXITOSO ======')
+            input('- Ingrese el número de la tarjeta =>>> ')
+            input('- Ingrese CCV de la tarjeta =>>> ')
+            input('- Ingrese F/v =>>> ')
+            input('Ingrese el número de cuotas => ')
+            input('====== PAGO EXITOSO ======')
         elif self.usser_pay == '02':
-            print('- Ingrese el número de la tarjeta =>>> ')
-            print('- Ingrese CCV de la tarjeta =>>> ')
-            print('- Ingrese F/v =>>> ')
-            print('- CUENTA AHORROS  ')
-            print('====== PAGO EXITOSO ======')
+            input('- Ingrese el número de la tarjeta =>>> ')
+            input('- Ingrese CCV de la tarjeta =>>> ')
+            input('- Ingrese F/v =>>> ')
+            input('- CUENTA AHORROS  ')
+            input('====== PAGO EXITOSO ======')
         elif self.usser_pay == '03':
             self.code = random.choice(self.random_number)
-            print(f'Codigo Generado {self.code}')
+            print(f'Codigo Generado  {self.code}')
             print('Dale este codigo al asesor del punto de pago :) ')
         
         
