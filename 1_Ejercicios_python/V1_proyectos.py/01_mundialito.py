@@ -9,7 +9,8 @@ import random
 
 class Bet_play():
     def __init__(self):
-        self.teams = ["Argentina", "Alemania", "Holanda", "Francia", "Colombia","Inglaterra", "Portugal", "Brasil", "España", "Italia", "Suecia", "Uruguay", "Croacia", "Chile"]
+        self.teams = ["Argentina", "Alemania", "Holanda", "Francia",                        
+        "Colombia","Inglaterra", "Portugal", "Brasil", "España", "Italia", "Suecia", "Uruguay", "Croacia", "Chile"]
         self.score = [1,2,3,4,5,6,7,8,9,10]
         self.request = ''
     
@@ -28,7 +29,8 @@ class Bet_play():
 # Probabilidades de ganancia o perdida => 
             self.score_election_1 = random.choice(self.score)
             self.score_election_2 = random.choice(self.score)
-            print({self.computer_election_1},'=>',{self.score_election_1}, {self.computer_election_2} , '=>' , {self.score_election_2})
+            print({self.computer_election_1},'=>',{self.score_election_1}, 
+            {self.computer_election_2} , '=>' , {self.score_election_2})
 
             if self.score_election_1 == self.score_election_2 :
                 print('¡¡¡ EMPATE !!!  Pierdes la mitad de tu dinero puto ;(')
