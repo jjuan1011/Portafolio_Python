@@ -54,16 +54,9 @@ class Videogame():
                     self.user_score += 1
                     self.global_score = print(f'User => {self.user_score}, Computer => {self.computer_score}')
 
-                
 game_run = Videogame()
 game_run.game()   
 
-
-                
-
-
-
-
-
+  
 
 videogame = Videogame()

@@ -16,6 +16,7 @@ class Bet_play():
     
     def bet_now(self):
         while self.request != 2:
+            
             print('========================= APUESTA AHORA =============================')
             self.computer_election_1 = random.choice(self.teams)
             self.computer_election_2 = random.choice(self.teams)

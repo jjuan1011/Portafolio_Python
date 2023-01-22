@@ -65,7 +65,7 @@ class Love():
                     print('===============================================================')
                     print(f'Tu pareja ideal es => {self.ideal_pair}')
             
-            if self.option == 'b':
+            elif self.option == 'b':
                 print('===============================================================')
                 self.question = ['Color favorito', 'Marca de ropa que más usas','Preferencia, Dinero o Amor', ]
                 for i in self.question:
@@ -75,7 +75,7 @@ class Love():
                 print('===============================================================')
                 print(f'Eres {self.gay} % GAY ;) ')
             
-            if self.option == 'c':
+            elif self.option == 'c':
                 print('===============================================================')
                 self.couple_destiny = ['Vas a Morir solo y pajero', 'Tendrás 45 años de matrimonio', 'Te casarás y te divorsiarás en 1 año', 'No tienes futuro en pareja, moriras el otro año ;)', 'Tendrás muchas perras :D']
                 self.destiny = random.choice(self.couple_destiny)
